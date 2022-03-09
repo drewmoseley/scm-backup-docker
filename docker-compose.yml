@@ -1,0 +1,8 @@
+version: "3"
+services:
+  scm-backup:
+    image: drewmoseley/scm-backup:latest
+    container_name: scm-backup
+    volumes:
+      - ${PWD}/settings.yml:/opt/scm-backup/settings.yml
+      - /backup/scm-backup/:/scm-backup/
