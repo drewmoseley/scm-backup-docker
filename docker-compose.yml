@@ -2,10 +2,9 @@ version: "3"
 services:
   scm-backup:
     image: drewmoseley/scm-backup:latest
+    user: "1000:1000"
     container_name: scm-backup
     environment:
-      - PUID=1000
-      - PGID=1000
       - TZ=America/New_York
     volumes:
       - ${PWD}/settings.yml:/opt/scm-backup/settings.yml
