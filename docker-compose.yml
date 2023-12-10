@@ -9,4 +9,4 @@ services:
       - TZ=America/New_York
     volumes:
       - ${PWD}/settings.yml:/opt/scm-backup/settings.yml
-      - /backup/scm-backup/:/scm-backup/
+      - /ext/scm-backup/:/scm-backup/
