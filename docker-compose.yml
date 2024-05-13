@@ -7,5 +7,5 @@ services:
     environment:
       - TZ=America/New_York
     volumes:
-      - ${PWD}/settings.yml:/opt/scm-backup/settings.yml
+      - ${HOME}/local/docker-volumes/scm-backup/settings.yml:/opt/scm-backup/settings.yml
       - /ext/scm-backup/:/scm-backup/
